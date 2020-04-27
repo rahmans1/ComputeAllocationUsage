@@ -1604,3 +1604,17 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+
+
+/*********************************************
+ * Custom
+ *******************************************/
+section.level2 > h1 {
+	    font-size: 100%;
+}
+
+section.level1 > h1 {
+	        font-size: 150%;
+}
+
