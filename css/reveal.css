@@ -1618,3 +1618,7 @@ section.level1 > h1 {
 	        font-size: 150%;
 }
 
+section.level2 > li {
+              font-size: 80%;
+}
+
