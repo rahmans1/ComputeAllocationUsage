@@ -68,37 +68,70 @@
 <h1>Secure Shell</h1>
 <h3 id="linux-machines">Linux Machines</h3>
 <ul>
-<li>Beluga</li>
+<li>Beluga
+<ul>
 <li>ssh <code>&lt;username&gt;</code><span class="citation" data-cites="beluga.computecanada.ca">@beluga.computecanada.ca</span> -Y</li>
 <li>ssh <code>&lt;username&gt;</code><span class="citation" data-cites="beluga">@beluga</span><code>&lt;1/2/3/4&gt;</code> -Y</li>
-<li>GREX</li>
+</ul></li>
+<li>GREX
+<ul>
 <li>ssh <code>&lt;username&gt;</code><span class="citation" data-cites="grex.westgrid.ca">@grex.westgrid.ca</span> -Y</li>
-<li>Cedar, Graham, Niagara</li>
-<li>ssh <code>&lt;username&gt;</code>@<code>&lt;cedar/graham/niagara&gt;</code>.computecanada.ca -Y</li>
-<li>JLAB</li>
+</ul></li>
+<li>Cedar, Graham, Niagara
+<ul>
+<li>ssh <code>&lt;username&gt;</code>@<code>&lt;cedar/graham/niagara&gt;</code> .computecanada.ca -Y</li>
+</ul></li>
+</ul>
+</section><section id="secure-shell-continued" class="slide level2">
+<h1>Secure Shell (continued)</h1>
+<ul>
+<li>JLAB
+<ul>
 <li>ssh <code>&lt;username&gt;</code>@<code>login.jlab.org</code> -Y</li>
 <li>ssh <code>&lt;username&gt;</code>@<code>ifarm&lt;1901/1902/1801/1802&gt;</code> -Y ### Windows Machines</li>
+</ul></li>
 <li>Use <a href="https://www.putty.org/">putty</a> and <a href="https://sourceforge.net/projects/xming/">xming</a></li>
 </ul>
 </section><section id="file-transfers" class="slide level2">
 <h1>File Transfers</h1>
 <ul>
 <li>Preferably use <a href="https://globus.computecanada.ca/">globus</a></li>
-<li>sftp from linux machines (Compute canada uses the same server address as for SSH and jlab uses ftp.jlab.org)</li>
+<li>sftp from linux machines (Compute canada uses the same server address as for SSH and jlab uses ftp.jlab.org)
+<ul>
 <li>lcd <code>&lt;local directory&gt;</code></li>
 <li>cd <code>&lt;remote directory&gt;</code></li>
 <li>put -r * [ Transfers from local to remote ]</li>
 <li>get -r * [ Transfers from remote to local ]</li>
+</ul></li>
 <li>psftp from windows machines</li>
 </ul>
 </section></section>
 <section><section id="running-simulation-jobs" class="titleslide slide level1"><h1>Running Simulation Jobs</h1></section><section id="beluga" class="slide level2">
 <h1>Beluga</h1>
 <ul>
-<li><code>source ~/projects/rrg-jmammei/REMOLL/environment/cedar_env.sh</code></li>
-<li><code>cd ~/projects/rrg-jmammei/REMOLL/job_submit</code></li>
-<li><code>./macro.py -h</code></li>
-<li>./macro.py -v</li>
+<li>source ~/projects/rrg-jmammei/REMOLL/environment/cedar<code>_</code>env.sh</li>
+<li>cd ~/projects/rrg-jmammei/REMOLL/job<code>_</code>submit</li>
+<li>./macro.py -h</li>
+<li>./macro.py -a rrg-jmammei -v develop -j ~/projects/rrg-jmammei/REMOLL/raw<code>_</code>output/testStudy/jsub -t ~/projects/rrg-jmammei/REMOLL/raw<code>_</code>output/testStudy/tmp -o ~/projects/rrg-jmammei/REMOLL/raw<code>_</code>output/testStudy/scratch -d 28 --bhd 28 -n 1000 -r 1 --time 00:25:00</li>
+</ul>
+</section><section id="grex" class="slide level2">
+<h1>GREX</h1>
+<ul>
+<li>source /home/jmammei/REMOLL/environment/cedar<code>_</code>env.sh</li>
+<li>cd /home/jmammei/REMOLL/job<code>_</code>submit</li>
+<li>./macro.py -h</li>
+</ul>
+</section><section id="ifarm" class="slide level2">
+<h1>IFARM</h1>
+<ul>
+<li>source /apps/root/6.18.00/setroot<code>_</code>CUE</li>
+<li>source /site/12gev<code>_</code>phys/softenv.csh devel</li>
+<li>You can copy the macro.py script from beluga to ifarm. Change account to halla and parition to production. You will also need to setup the directory structure.</li>
+</ul>
+</section><section id="customisation" class="slide level2">
+<h1>Customisation</h1>
+<ul>
+<li>You can copy the submission script and customise it to your liking for different studies.</li>
 </ul>
 </section></section>
     </div>
