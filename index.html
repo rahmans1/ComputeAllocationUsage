@@ -1,50 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Sakib Rahman">
+  <title>Using UMSAP Compute Allocation</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href=".//css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href=".//css/theme/black.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? './/css/print/pdf.css' : './/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src=".//lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
 
-		<title>reveal.js</title>
+<section>
+  <h1 class="title">Using UMSAP Compute Allocation</h1>
+  <h2 class="author">Sakib Rahman</h2>
+  <h3 class="date">27 April, 2020</h3>
+</section>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+<section><section id="available-resources" class="titleslide slide level1"><h1>Available Resources</h1></section><section id="allocated-resource" class="slide level2">
+<h1>Allocated Resource</h1>
+<ol type="1">
+<li>Beluga (rrg-jmammei)</li>
+<li>GREX</li>
+<li>JLAB Ifarm (moller12gev)</li>
+</ol>
+</section><section id="rapid-access-service" class="slide level2">
+<h1>Rapid Access Service</h1>
+<ol type="1">
+<li>Cedar</li>
+<li>Niagara</li>
+<li>Graham</li>
+<li>Cloud (Not active right now)</li>
+</ol>
+</section></section>
+<section><section id="how-to-get-access" class="titleslide slide level1"><h1>How to Get Access</h1></section><section id="compute-canada-services" class="slide level2">
+<h1>Compute Canada Services</h1>
+<ul>
+<li>Make a <a href="https://www.computecanada.ca/research-portal/account-management/apply-for-an-account/">compute canada account</a></li>
+<li>For access to Niagara, you will need to <a href="https://docs.computecanada.ca/wiki/Niagara_Quickstart#Getting_started_on_Niagara">opt-in</a></li>
+<li>Same applies for creating <a href="https://docs.computecanada.ca/wiki/Cloud">cloud project</a></li>
+</ul>
+</section></section>
+    </div>
+  </div>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+  <script src=".//lib/js/head.min.js"></script>
+  <script src=".//js/reveal.js"></script>
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+  <script>
 
-		<script src="js/reveal.js"></script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				hash: true,
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/highlight/highlight.js' },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-		</script>
-	</body>
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: './/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: './/plugin/zoom-js/zoom.js', async: true },
+          { src: './/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
 </html>
