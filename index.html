@@ -35,19 +35,19 @@
 
 <section><section id="available-resources" class="titleslide slide level1"><h1>Available Resources</h1></section><section id="allocated-resource" class="slide level2">
 <h1>Allocated Resource</h1>
-<ol type="1">
+<ul>
 <li>Beluga (rrg-jmammei)</li>
 <li>GREX</li>
 <li>JLAB Ifarm (moller12gev)</li>
-</ol>
+</ul>
 </section><section id="rapid-access-service" class="slide level2">
 <h1>Rapid Access Service</h1>
-<ol type="1">
+<ul>
 <li>Cedar</li>
 <li>Niagara</li>
 <li>Graham</li>
 <li>Cloud (Not active right now)</li>
-</ol>
+</ul>
 </section></section>
 <section><section id="how-to-get-access" class="titleslide slide level1"><h1>How to Get Access</h1></section><section id="compute-canada-services" class="slide level2">
 <h1>Compute Canada Services</h1>
@@ -66,15 +66,14 @@
 </section></section>
 <section><section id="logging-in" class="titleslide slide level1"><h1>Logging in</h1></section><section id="compute-canada-services-1" class="slide level2">
 <h1>Compute Canada Services</h1>
-<ol type="1">
-<li>Beluga ssh <username><span class="citation" data-cites="beluga.computecanada.ca">@beluga.computecanada.ca</span> -Y ssh <username><span class="citation" data-cites="beluga&lt;1/2/3/4">@beluga&lt;1/2/3/4</span>&gt; -Y</li>
-<li>GREX ssh <username><span class="citation" data-cites="grex.westgrid.ca">@grex.westgrid.ca</span> -Y</li>
-<li>Cedar, Graham, Niagara ssh <username>@<cedar/graham/niagara>.computecanada.ca -Y</li>
-<li>JLAB ssh <username><span class="citation" data-cites="login.jlab.org">@login.jlab.org</span> -Y ssh <username><span class="citation" data-cites="ifarm&lt;1901/1902/1801/1802">@ifarm&lt;1901/1902/1801/1802</span>&gt; -Y</li>
-</ol>
+<p>Linux Machines * Beluga ** ssh <code>&lt;username&gt;</code><span class="citation" data-cites="beluga.computecanada.ca">@beluga.computecanada.ca</span> -Y ** ssh <code>&lt;username&gt;</code><span class="citation" data-cites="beluga">@beluga</span><code>&lt;1/2/3/4&gt;</code> -Y * GREX ** ssh <code>&lt;username&gt;</code><span class="citation" data-cites="grex.westgrid.ca">@grex.westgrid.ca</span> -Y * Cedar, Graham, Niagara ** ssh <code>&lt;username&gt;</code>@<code>&lt;cedar/graham/niagara&gt;</code>.computecanada.ca -Y * JLAB ** ssh <code>&lt;username&gt;</code>@<code>login.jlab.org</code> -Y ** ssh <code>&lt;username&gt;</code>@<code>ifarm&lt;1901/1902/1801/1802&gt;</code> -Y Windows Machines Use <a href="https://www.putty.org/">putty</a> and <a href="https://sourceforge.net/projects/xming/">xming</a></p>
 </section><section id="file-transfers" class="slide level2">
-<h1>File transfers</h1>
-<p>Preferably use globus</p>
+<h1>File Transfers</h1>
+<ul>
+<li>Preferably use <a href="https://globus.computecanada.ca/">globus</a></li>
+<li>sftp from linux machines ** lcd <code>&lt;local directory&gt;</code> ** cd <code>&lt;remote directory&gt;</code> ** put -r * [ Transfers from local to remote ] ** get -r * [ Transfers from remote to local ]</li>
+<li>psftp from windows machines</li>
+</ul>
 </section></section>
     </div>
   </div>
